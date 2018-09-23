@@ -16,6 +16,7 @@
 		F62F6BF12156CCFE006B94F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62F6BEF2156CCFE006B94F8 /* LaunchScreen.storyboard */; };
 		F62F6BFC2156CCFE006B94F8 /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62F6BFB2156CCFE006B94F8 /* InstagramTests.swift */; };
 		F62F6C072156CCFE006B94F8 /* InstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62F6C062156CCFE006B94F8 /* InstagramUITests.swift */; };
+		F680E5CD215730BF0013A422 /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680E5CC215730BF0013A422 /* PostViewCell.swift */; };
 		F6D008D12156D3AE0014B7A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D008D02156D3AE0014B7A6 /* LoginViewController.swift */; };
 		F6D008D52156F2450014B7A6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D008D42156F2450014B7A6 /* Post.swift */; };
 		F6D008D72156F4150014B7A6 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D008D62156F4150014B7A6 /* HomeScreenViewController.swift */; };
@@ -60,6 +61,7 @@
 		F62F6C022156CCFE006B94F8 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62F6C062156CCFE006B94F8 /* InstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramUITests.swift; sourceTree = "<group>"; };
 		F62F6C082156CCFE006B94F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F680E5CC215730BF0013A422 /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
 		F6D008D02156D3AE0014B7A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F6D008D42156F2450014B7A6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		F6D008D62156F4150014B7A6 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		F62F6BE52156CCFE006B94F8 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				F680E5CB215730920013A422 /* View */,
 				F6D008D32156F20A0014B7A6 /* ViewControllers */,
 				F6D008D22156F2010014B7A6 /* Model */,
 				F62F6BE62156CCFE006B94F8 /* AppDelegate.swift */,
@@ -170,6 +173,14 @@
 				F62F6C082156CCFE006B94F8 /* Info.plist */,
 			);
 			path = InstagramUITests;
+			sourceTree = "<group>";
+		};
+		F680E5CB215730920013A422 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F680E5CC215730BF0013A422 /* PostViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		F6D008D22156F2010014B7A6 /* Model */ = {
@@ -354,11 +365,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Instagram/Pods-Instagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -408,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F680E5CD215730BF0013A422 /* PostViewCell.swift in Sources */,
 				F6D008D92156F84D0014B7A6 /* PhotoMapViewController.swift in Sources */,
 				F6D008D12156D3AE0014B7A6 /* LoginViewController.swift in Sources */,
 				F6D008D72156F4150014B7A6 /* HomeScreenViewController.swift in Sources */,
